@@ -2,9 +2,8 @@ exports.up = function (knex, Promise) {
   console.log('Creating definitions')
   return knex.schema.createTableIfNotExists('definitions', function (table) {
     table.increments('id')
-    table.string('Term')
-    table.string('Explanation')
-    table.string('Links')
+    table.string('name')
+    table.string('link')
   })
 }
 
