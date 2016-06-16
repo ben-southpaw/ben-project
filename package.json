@@ -10,7 +10,8 @@
     "migrate:rollback": "knex migrate:rollback",
     "seed:make": "knex seed:make",
     "seed:run": "knex seed:run",
-    "test": "tape tests.js"
+    "test": "tape tests.js",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -23,9 +24,13 @@
   },
   "homepage": "https://github.com/ben-southpaw/ben-project#readme",
   "devDependencies": {
+    "nodemon": "^1.9.2",
     "tape": "^4.5.1"
   },
   "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
     "knex": "^0.11.5",
     "sqlite3": "^3.1.4"
   }
